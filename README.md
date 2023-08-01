@@ -1,11 +1,13 @@
-## Basics of Computer Graphics
+# Fundamentals of computer graphics
 
-The code written for AW's labs, using SFML and wxWidgets libraries.  
-  
-Semester 4, year 2021.  
+Code written for Applied Computer Science **Fundamentals of computer graphics** course at [AGH UST](https://www.agh.edu.pl/en) [WFiIS](https://www.fis.agh.edu.pl/en/).
 
-### Useful utilities:
+Semester `4`, year `2021`.
+
+## Build with CMake:
+
 `CMakeLists.txt` (for SFML)
+
 ```cmake
 CMAKE_MINIMUM_REQUIRED(VERSION 3.19)
 
@@ -26,5 +28,8 @@ FIND_PACKAGE(SFML 2.5 COMPONENTS system window graphics REQUIRED)
 
 ADD_EXECUTABLE(${PROGRAM_NAME} main.cpp ${SOURCES})
 TARGET_LINK_LIBRARIES(${PROGRAM_NAME} PUBLIC sfml-system sfml-window sfml-graphics)
-
 ```
+
+## License
+
+Sources are licensed under MIT, a free and open-source license. For details, please see [the license file](LICENSE.md).
